@@ -1,11 +1,18 @@
-<app-navbar></app-navbar>
-<h1 class="display-5 text-center">register</h1>
-<form class="form px-5" [formGroup]="formularioDeRegistro" (ngSubmit)="onSubmit()">
+<div class="bg-dark heightT">
+  <app-navbar></app-navbar>
+  <div class="register">
+    <h1 class="display-5 text-center text-light">register</h1>
 
-      <input type="email" class="form-control mt-3" formControlName="email" placeholder="email">
-    
-      <input type="text" class="form-control mt-3" formControlName="password" placeholder="password">
+    <form class="form col-8" [formGroup]="formularioDeRegistro" (ngSubmit)="onSubmit()">
 
-   
-    <button type="submit" class="btn btn-primary" >Submit</button>
-  </form>
+      <input type="email" class="form-control" formControlName="email" placeholder="email" autofocus>
+
+      <input type="text" class="form-control" formControlName="password" placeholder="password">
+
+      <div class="container d-flex justify-content-around">
+        <button type="submit" class="btn btn-primary">send</button>
+      </div>
+
+    </form>
+  </div>
+</div>

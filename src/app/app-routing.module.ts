@@ -9,7 +9,7 @@ const routes: Routes = [
   {path:'',pathMatch:'full', redirectTo:'/main'},
   {path:'main', 
   component: MainComponent,
-  ...canActivate( () => redirectUnauthorizedTo(['/register']))
+  ...canActivate( () => redirectUnauthorizedTo(['/login']))
 },
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent}

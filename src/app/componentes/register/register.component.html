@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<h1 class="display-5 text-center">register</h1>
+<form class="form px-5" [formGroup]="formularioDeRegistro" (ngSubmit)="onSubmit()">
+
+      <input type="email" class="form-control mt-3" formControlName="email" placeholder="email">
+    
+      <input type="text" class="form-control mt-3" formControlName="password" placeholder="password">
+
+   
+    <button type="submit" class="btn btn-primary" >Submit</button>
+  </form>

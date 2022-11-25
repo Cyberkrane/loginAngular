@@ -1,0 +1,19 @@
+.login{
+    width: 40%;
+    height: 400px;
+    margin:  1.2rem auto;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: inset aliceblue 0 0 5px, rgb(95, 102, 107) 3px 3px 15px;
+}
+.login input{
+    margin: 20px auto;
+}
+
+.btn{
+    box-shadow: inset aliceblue 0 0 5px, rgb(86, 94, 101) 3px 3px 20px ;
+}

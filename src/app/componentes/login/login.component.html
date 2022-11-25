@@ -1,11 +1,26 @@
+<div class="bg-dark">
 <app-navbar></app-navbar>
-<h1 class="display-5 text-center">login</h1>
-<form class="form px-5" [formGroup]="formularioDeRegistro" (ngSubmit)="onSubmit()">
 
-    <input type="email" class="form-control mt-3" formControlName="email" placeholder="email">
-  
-    <input type="text" class="form-control mt-3" formControlName="password" placeholder="password">
+<div class="login">
+  <h1 class="display-5 text-center text-light">login</h1>
 
- 
-  <button type="submit" class="btn btn-primary" >Submit</button>
+<form class="form col-8" [formGroup]="formularioDeRegistro" (ngSubmit)="onSubmit()">
+
+  <input type="email" class="form-control" formControlName="email" placeholder="email" autofocus >
+
+  <input type="text" class="form-control" formControlName="password" placeholder="password" >
+
+  <div class="container d-flex justify-content-around">
+    <button type="submit" class="btn btn-primary">send</button>
+  </div>
+
 </form>
+</div>
+
+
+
+<div class="container d-flex justify-content-around">
+  <button class="btn btn-primary my-5" (click)="onClick()">login With Google</button>
+  <button class="btn btn-primary my-5" routerLink="/register">I hav`nt an account</button>
+</div>
+</div>

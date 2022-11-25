@@ -1,0 +1,16 @@
+.btn-logout{
+    margin-left: 80% !important;
+    list-style: none;
+}
+
+@media screen and (max-width:982px) {
+    .btn-logout{
+        margin-left: 78% !important;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .btn-logout{
+        margin-left: 78% !important;
+    }
+}
